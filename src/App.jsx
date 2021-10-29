@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Header from './Header.jsx';
+import React from "react";
+import ReactDOM from "react-dom";
+import HeaderImage from "./HeaderImage.jsx";
+import Activities from "./screens/Activities.jsx";
 
 const App = () => {
   return (
-    <div className='container'>
-      <Header/>
-      <div className="container-view">Some activities should be here</div>
+    <div className="app-container">
+      <HeaderImage />
+      <Activities />
     </div>
   );
 };
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));
 
 export default App;
